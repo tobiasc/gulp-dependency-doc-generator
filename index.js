@@ -38,11 +38,9 @@ function run(options, callback) {
                         if (bowerrcObj.directory) {
                             dependencyFileFolder = bowerFolder + bowerrcObj.directory.replace('./', '');
                         }
-                        cb1();
 
                     } catch (err) {
                         dependencyFileFolder = dependencyFile.replace('bower.json', 'bower_components');
-                        cb1();
                     }
                 }
 
